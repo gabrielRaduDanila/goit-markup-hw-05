@@ -14,6 +14,22 @@
 </head>
 
 <body>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <a class="close-btn" data-modal-close>
+        <div class="close-btn-container">
+          <svg class="close-btn-icon" width="11px" height="11px">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </div>
+      </a>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat distinctio dicta eum autem. Ut, quaerat.
+        Velit numquam autem et iusto!
+      </p>
+    </div>
+  </div>
   <!-- -- --- header --- -- -->
   <header class="page-header">
     <div class="container">
@@ -55,7 +71,7 @@
           EFFECTIVE SOLUTIONS FOR <br />
           YOUR BUSINESS
         </h1>
-        <button type="button" class="hero-button">Request our service</button>
+        <button type="button" class="hero-button" data-modal-open>Request our service</button>
       </div>
     </section>
     <!-- create section our characteristics -->
@@ -121,17 +137,23 @@
           <li class="what-we-do-card">
             <img class="what-we-do-image" src="./images/what-we-do-1.jpg" alt="first image with what we do"
               width="370" />
-            <div class="what-we-do-text"><p>DESKTOP APPS</p></div>
+            <div class="what-we-do-text">
+              <p>DESKTOP APPS</p>
+            </div>
           </li>
           <li class="what-we-do-card">
             <img class="what-we-do-image" src="./images/what-we-do-2.jpg" alt="second image with what we do"
               width="370" />
-            <div class="what-we-do-text"><p>Mobile APPS</p></div>
+            <div class="what-we-do-text">
+              <p>Mobile APPS</p>
+            </div>
           </li>
           <li class="what-we-do-card">
             <img class="what-we-do-image" src="./images/what-we-do-3.jpg" alt="third image with what we do"
               width="370" />
-            <div class="what-we-do-text"><p>DESIGN SOLUTIONS</p></div>
+            <div class="what-we-do-text">
+              <p>DESIGN SOLUTIONS</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -381,6 +403,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
